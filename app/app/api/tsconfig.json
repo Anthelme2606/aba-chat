@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "noUnusedLocals": false,
+    "module": "commonjs",
+    "strict": true,
+    "typeRoots": ["./node_modules/@types", "./@types"],
+    "types": ["node"], 
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules/*", "lib/*", "src/*"]
+    }
+  },
+  "include": [
+    "lib/*",  // Inclure le dossier lib pour les déclarations globales
+    "src/*",  // Inclure le dossier src pour ton code applicatif
+    "api/**/*"   // Inclure le dossier api si nécessaire
+  ]
+}
